@@ -1,0 +1,17 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# IntelliJ IDEA
+.idea/
+.idea/compiler.xml
+.idea/emacs.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+
+# idea, _site가 ignore되지 않던 오류 TODO 여기서부터~
+# https://stackoverflow.com/questions/19973506/cannot-ignore-idea-workspace-xml-keeps-popping-up

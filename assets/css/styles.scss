@@ -1,0 +1,106 @@
+---
+---
+@import "main";
+
+// TODO 반응형 레이아웃 만들기
+// 반응형 웹디자인의 기본 사항 @https://developers.google.com/web/fundamentals/design-and-ux/responsive/?hl=ko
+.default-body {
+  margin: 0;
+
+  .nav {
+    //background-color: goldenrod;
+    border-bottom: 1px solid lightgrey;
+    .nav-content {
+      max-width: calc(800px - (30px * 2));
+      padding: 20px 30px;
+      margin: 0 auto;
+      a {
+        text-decoration: none;
+        color: black;
+        &.home-link {
+          font-size: 25px;
+        }
+      }
+
+      //TODO 왼쪽 오른쪽 배열부터
+      //https://css-tricks.com/left-and-right/
+      .home-link {
+        display: inline-block;
+        width: 50%;
+      }
+      .item-links {
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+      }
+    }
+  }
+
+  .container-content {
+    //border: 1px solid red;
+
+    > .content {
+      //border: 1px solid green;
+      max-width: calc(800px - (30px * 2));
+      padding: 20px 30px;
+      margin: 0 auto;
+    }
+  }
+
+  .tag {
+    padding: 1px 2px;
+    margin-right: 2px;
+    //border: 1px solid grey;
+    border-radius: 4px;
+    color: grey;
+  }
+}
+
+.list-container {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+  &:last-of-type {
+    border: none;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li.li-item {
+    list-style-type: none;
+    //border: 1px solid grey;
+    padding: 10px 0;
+    margin-bottom: 20px;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .post {
+    .post-title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .post-excerpt {
+
+    }
+    .tag-list, .post-date {
+      display: inline-block;
+    }
+    .tag {
+
+    }
+    .post-date {
+
+    }
+  }
+
+  .til {
+
+  }
+}
+

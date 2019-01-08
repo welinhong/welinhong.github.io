@@ -1,0 +1,13 @@
+<nav class="nav">
+    <div class="nav-content">
+        <div class="home-link">
+            <a href="/">Welinhong의 개발노트</a>
+        </div><div class="item-links">
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+                {{ item.name }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</nav>
