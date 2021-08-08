@@ -1,0 +1,13 @@
+{
+  "blog post": {
+    "prefix": "post",
+    "body": [
+      "---",
+      "title: ",
+      "date: ",
+      "description:",
+      "---"
+    ],
+    "description": "blog post"
+  }
+}
