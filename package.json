@@ -1,8 +1,18 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "name": "welinhong-blog",
+  "description": "느리더라도 꾸준히 기록하는 공간",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Welin Hong <dmdanbi@gmail.com>",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b main",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -32,6 +42,7 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "prettier": "2.3.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -43,14 +54,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }

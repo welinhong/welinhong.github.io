@@ -6,10 +6,8 @@ module.exports = {
       summary: `매 순간을 즐기며 살고 싶은 개발자`,
     },
     description: "",
-    siteUrl: "",
-    social: {
-      twitter: `kylemathews`,
-    },
+    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    social: {},
   },
   plugins: [
     `gatsby-plugin-image`,
